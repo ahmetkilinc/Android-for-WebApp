@@ -40,11 +40,11 @@ public class AsilSayfa extends AppCompatActivity {
 
             wv.setWebViewClient(new WebViewClient() {
 
-                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                public boolean shouldOverrideUrlLoading(WebView view, String url){
 
                     String url2 = "http://ahmetkilinc.net/holymoly/create-form.php";
 
-                    if (url != null && url.startsWith(url2)) {
+                    if (url != null && url.startsWith(url2)){
 
                         view.getContext().startActivity(
 
@@ -60,14 +60,11 @@ public class AsilSayfa extends AppCompatActivity {
             });
 
             wv.loadUrl("http://ahmetkilinc.net/holymoly");
-
         } else {
-
             for (int i = 0; i < 3; i++){
 
                 Toast.makeText(getApplicationContext(), "Uygulama internet bağlantısı gerektirmektedir, internetle alakalı sorunlarınızı giderdikten sonra tekrar deneyiniz.", Toast.LENGTH_LONG).show();
             }
-
             finish();
         }
     }
