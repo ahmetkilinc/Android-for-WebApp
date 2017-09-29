@@ -1,6 +1,5 @@
 package tr.com.betonel.betonelteklifuygulamasi;
 
-import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
