@@ -18,10 +18,10 @@
             android:layout_height="wrap_content"
             android:background="?android:attr/colorPrimary"
             android:gravity="center"
-            android:orientation="vertical"
             android:weightSum="1"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp">
+            tools:layout_editor_absoluteY="0dp"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/iBLogo"
