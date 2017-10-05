@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.PopupWindow;
 
 public class navigationFlow extends AppCompatActivity
@@ -33,9 +34,6 @@ public class navigationFlow extends AppCompatActivity
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_navigation_flow);
-
-
-
 
         final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener(){
@@ -75,31 +73,33 @@ public class navigationFlow extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed(){
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
+        if (drawer.isDrawerOpen(GravityCompat.START)){
+
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        } else{
+
             super.onBackPressed();
         }
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu){
+
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.navigation_flow, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+    public boolean onOptionsItemSelected(MenuItem item){
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_settings){
+
             return true;
         }
 
@@ -108,7 +108,8 @@ public class navigationFlow extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(MenuItem item){
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -117,18 +118,18 @@ public class navigationFlow extends AppCompatActivity
             Intent intent = new Intent(navigationFlow.this, AsilSayfa.class);
             startActivity(intent);
         }
-        else if (id == R.id.teklifara) {
+        else if (id == R.id.teklifara){
 
             final Intent callIntent = new Intent(Intent.ACTION_DIAL);
             callIntent.setData(Uri.parse("tel:+905318170869"));
             startActivity(callIntent);
         }
-        else if (id == R.id.hakkimizda) {
+        else if (id == R.id.hakkimizda){
 
             Intent intent = new Intent(navigationFlow.this, Hakkinda.class);
             startActivity(intent);
         }
-        else if (id == R.id.iletisim) {
+        else if (id == R.id.iletisim){
 
             Intent intent = new Intent(navigationFlow.this, Iletisim.class);
             startActivity(intent);
