@@ -25,4 +25,5 @@
     <string name="navigation_drawer_open">Aç</string>
     <string name="navigation_drawer_close">Kapat</string>
     <string name="action_settings">Ayarlar</string>
+    <string name="title_activity_navigation_flow">navigationFlow</string>
 </resources>

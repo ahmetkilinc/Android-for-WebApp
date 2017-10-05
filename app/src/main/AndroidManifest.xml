@@ -28,7 +28,11 @@
         <activity android:name=".Hakkinda" />
         <activity android:name=".Iletisim" />
         <activity android:name=".WebSiteAnasayfa" />
-        <activity android:name=".test"></activity>
+        <activity android:name=".test" />
+        <activity
+            android:name=".navigationFlow"
+            android:label="@string/title_activity_navigation_flow"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
