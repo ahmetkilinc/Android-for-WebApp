@@ -36,7 +36,7 @@ public class test extends AppCompatActivity{
             @Override
             public void onClick(View v){
 
-                Intent intent = new Intent(test.this, ilkSayfa.class);
+                Intent intent = new Intent(test.this, navigationFlow.class);
                 startActivity(intent);
             }
         });
