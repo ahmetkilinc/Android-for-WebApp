@@ -71,7 +71,8 @@
                 android:gravity="center"
                 android:text="@string/kaydet_button"
                 android:textAlignment="center"
-                android:textDirection="inherit" />
+                android:textDirection="inherit"
+                tools:targetApi="m" />
         </TableRow>
 
         <TableRow
