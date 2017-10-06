@@ -121,7 +121,7 @@ public class navigationFlow extends AppCompatActivity
         else if (id == R.id.teklifara){
 
             final Intent callIntent = new Intent(Intent.ACTION_DIAL);
-            callIntent.setData(Uri.parse("tel:+905318170869"));
+            callIntent.setData(Uri.parse("tel:+0000000000000"));
             startActivity(callIntent);
         }
         else if (id == R.id.hakkimizda){
