@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.Switch;
 
 public class test extends AppCompatActivity{
 
@@ -22,6 +24,7 @@ public class test extends AppCompatActivity{
 
         Button btnGeri = (Button) findViewById(R.id.btnGeri);
         Button btnIleri = (Button) findViewById(R.id.btnIleri);
+        Switch sw = (Switch) findViewById(R.id.switch1);
 
         btnGeri.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -36,7 +39,7 @@ public class test extends AppCompatActivity{
             @Override
             public void onClick(View v){
 
-                Intent intent = new Intent(test.this, navigationFlow.class);
+                Intent intent = new Intent(test.this, ilkSayfa.class);
                 startActivity(intent);
             }
         });
