@@ -72,7 +72,7 @@ public class ilkSayfa extends AppCompatActivity{
             public void onClick(View v){
 
                 final Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:+905318170869"));
+                callIntent.setData(Uri.parse("tel:+000000000000"));
                 startActivity(callIntent);
             }
         });
