@@ -26,4 +26,5 @@
     <string name="navigation_drawer_close">Kapat</string>
     <string name="action_settings">Ayarlar</string>
     <string name="title_activity_navigation_flow">navigationFlow</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
