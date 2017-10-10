@@ -9,6 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Switch;
+import android.widget.Toast;
 
 public class test extends AppCompatActivity{
 
@@ -29,20 +30,18 @@ public class test extends AppCompatActivity{
             @Override
             public void onClick(View v){
 
-
                 final Snackbar snackbar = Snackbar.make(v, "Geri Yönlendirileceksiniz.", Snackbar.LENGTH_INDEFINITE);
 
-                        snackbar.setAction("ok", new View.OnClickListener() {
+                        snackbar.setAction("ok", new View.OnClickListener(){
                             @Override
                             public void onClick(View v){
 
                                 snackbar.dismiss();
-
+                                /*
                                 Intent intent = new Intent(test.this, MainActivity.class);
-                                startActivity(intent);
+                                startActivity(intent);*/
                             }
                         });
-
                 snackbar.show();
             }
         });
@@ -51,7 +50,7 @@ public class test extends AppCompatActivity{
             @Override
             public void onClick(View v){
 
-                Intent intent = new Intent(test.this, Main2Activity.class);
+                Intent intent = new Intent(test.this, ilkSayfa.class);
                 startActivity(intent);
             }
         });
