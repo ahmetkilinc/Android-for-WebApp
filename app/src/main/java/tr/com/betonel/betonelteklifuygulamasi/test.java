@@ -32,16 +32,16 @@ public class test extends AppCompatActivity{
 
                 final Snackbar snackbar = Snackbar.make(v, "Geri Yönlendirileceksiniz.", Snackbar.LENGTH_INDEFINITE);
 
-                        snackbar.setAction("ok", new View.OnClickListener(){
-                            @Override
-                            public void onClick(View v){
+                    snackbar.setAction("ok", new View.OnClickListener(){
+                        @Override
+                        public void onClick(View v){
 
-                                snackbar.dismiss();
-                                /*
-                                Intent intent = new Intent(test.this, MainActivity.class);
-                                startActivity(intent);*/
-                            }
-                        });
+                            snackbar.dismiss();
+
+                            Intent intent = new Intent(test.this, MainActivity.class);
+                            startActivity(intent);
+                        }
+                    });
                 snackbar.show();
             }
         });

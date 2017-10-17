@@ -57,11 +57,21 @@ public class ilkSayfa extends AppCompatActivity{
                         DrawerLayout.LayoutParams.FILL_PARENT);
 
                 Button btnDismiss = (Button)popupView.findViewById(R.id.dismiss);
+                Button btnKapat = (Button) popupView.findViewById(R.id.button);
+
+                btnKapat.setOnClickListener(new Button.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        popupWindow.dismiss();
+                    }
+                });
+
                 btnDismiss.setOnClickListener(new Button.OnClickListener(){
 
                     @Override
                     public void onClick(View v){
-                        // TODO Auto-generated method stub
+
                         popupWindow.dismiss();
                     }});
 

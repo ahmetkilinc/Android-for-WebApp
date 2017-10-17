@@ -3,6 +3,7 @@
     <string name="title_activity_login">Giriş Yap</string>
     <!-- Strings related to login -->
     <string name="teklif_al">E-Teklif Al</string>
+    <string name="bntKapat">Kapat</string>
     <string name="sorumlu_ara">Teklif Sorumlusunu Ara</string>
     <string name="hakkimizda">Hakkımızda</string>
     <string name="iletisim">İletişim</string>
