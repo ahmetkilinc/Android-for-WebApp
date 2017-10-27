@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.Toast;
 
+import com.liuguangqiang.swipeback.SwipeBackLayout;
+
 public class ilkSayfa extends AppCompatActivity{
 
     @Override
@@ -47,11 +49,16 @@ public class ilkSayfa extends AppCompatActivity{
             @Override
             public void onClick(View v){
 
+                Intent intent = new Intent(ilkSayfa.this, popUpSwipe.class);
+                startActivity(intent);
+
+/*
                 LayoutInflater layoutInflater
                         = (LayoutInflater)getBaseContext()
                         .getSystemService(LAYOUT_INFLATER_SERVICE);
-                View popupView = layoutInflater.inflate(R.layout.layout_popup, null);
+                View popupView = layoutInflater.inflate(R.layout.activity_pop_up_swipe, null);
                 final PopupWindow popupWindow = new PopupWindow(
+
                         popupView,
                         DrawerLayout.LayoutParams.FILL_PARENT,
                         DrawerLayout.LayoutParams.FILL_PARENT);
@@ -78,7 +85,7 @@ public class ilkSayfa extends AppCompatActivity{
                 popupWindow.showAsDropDown(iBLogo, 50, 50);
 
                 //Intent intent = new Intent(ilkSayfa.this, WebSiteAnasayfa.class);
-                //startActivity(intent);
+                //startActivity(intent);*/
             }
         });
 
