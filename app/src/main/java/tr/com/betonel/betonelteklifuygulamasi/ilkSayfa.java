@@ -75,6 +75,7 @@ public class ilkSayfa extends SwipeBackActivity{
 
                 final Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 callIntent.setData(Uri.parse("tel:+903123958125"));
+
                 startActivity(callIntent);
             }
         });
