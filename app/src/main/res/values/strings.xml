@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Betonel Teklif Uygulamasi</string>
-    <string name="title_activity_login">Giriş Yap</string>
     <!-- Strings related to login -->
     <string name="teklif_al">E-Teklif Al</string>
     <string name="bntKapat">Kapat</string>
@@ -8,25 +7,6 @@
     <string name="hakkimizda">Hakkımızda</string>
     <string name="iletisim">İletişim</string>
     <string name="cikis">Çıkış</string>
-    <string name="prompt_email">E-Posta</string>
-    <string name="prompt_password">Parola (opsiyonel)</string>
-    <string name="action_sign_in">Giriş Yap veya Kaydol</string>
-    <string name="action_sign_in_short">Kaydol</string>
     <string name="back_button">Geri</string>
     <string name="kaydet_button">Kaydet</string>
-    <string name="error_invalid_email">Geçersiz E-Posta Adresi</string>
-    <string name="error_invalid_password">Geçersiz Parola</string>
-    <string name="error_incorrect_password">Parola Yanlış</string>
-    <string name="error_field_required">Zorunlu Alan</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="navigation_drawer_open">Aç</string>
-    <string name="navigation_drawer_close">Kapat</string>
-    <string name="action_settings">Ayarlar</string>
-    <string name="title_activity_navigation_flow">navigationFlow</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_tabbed">TabbedAct</string>
 </resources>

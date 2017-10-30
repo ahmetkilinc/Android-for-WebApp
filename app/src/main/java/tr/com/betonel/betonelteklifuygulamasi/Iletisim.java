@@ -14,7 +14,10 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-public class Iletisim extends AppCompatActivity {
+import com.liuguangqiang.swipeback.SwipeBackActivity;
+import com.liuguangqiang.swipeback.SwipeBackLayout;
+
+public class Iletisim extends SwipeBackActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class Iletisim extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_iletisim);
+        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
 
         WebView wvHakkinda = (WebView) findViewById(R.id.wvIletisim);
 

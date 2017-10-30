@@ -2,21 +2,17 @@ package tr.com.betonel.betonelteklifuygulamasi;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.PopupWindow;
 import android.widget.Toast;
-
+import com.liuguangqiang.swipeback.SwipeBackActivity;
 import com.liuguangqiang.swipeback.SwipeBackLayout;
 
-public class ilkSayfa extends AppCompatActivity{
+public class ilkSayfa extends SwipeBackActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -28,6 +24,7 @@ public class ilkSayfa extends AppCompatActivity{
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_ilk_sayfa);
+        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
 
         final ImageButton iBLogo = (ImageButton) findViewById(R.id.iBLogo);
         Button btnTeklifAl = (Button) findViewById(R.id.btnETeklifAl);
@@ -49,43 +46,8 @@ public class ilkSayfa extends AppCompatActivity{
             @Override
             public void onClick(View v){
 
-                Intent intent = new Intent(ilkSayfa.this, popUpSwipe.class);
-                startActivity(intent);
-
-/*
-                LayoutInflater layoutInflater
-                        = (LayoutInflater)getBaseContext()
-                        .getSystemService(LAYOUT_INFLATER_SERVICE);
-                View popupView = layoutInflater.inflate(R.layout.activity_pop_up_swipe, null);
-                final PopupWindow popupWindow = new PopupWindow(
-
-                        popupView,
-                        DrawerLayout.LayoutParams.FILL_PARENT,
-                        DrawerLayout.LayoutParams.FILL_PARENT);
-
-                Button btnDismiss = (Button)popupView.findViewById(R.id.dismiss);
-                Button btnKapat = (Button) popupView.findViewById(R.id.button);
-
-                btnKapat.setOnClickListener(new Button.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        popupWindow.dismiss();
-                    }
-                });
-
-                btnDismiss.setOnClickListener(new Button.OnClickListener(){
-
-                    @Override
-                    public void onClick(View v){
-
-                        popupWindow.dismiss();
-                    }});
-
-                popupWindow.showAsDropDown(iBLogo, 50, 50);
-
                 //Intent intent = new Intent(ilkSayfa.this, WebSiteAnasayfa.class);
-                //startActivity(intent);*/
+                //startActivity(intent);
             }
         });
 
@@ -102,7 +64,7 @@ public class ilkSayfa extends AppCompatActivity{
             @Override
             public boolean onLongClick(View v){
 
-                Toast.makeText(getApplicationContext(), "Her zaman web sitemizi kullanarak tarayınız üzerinden teklif alabilirsiniz", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Her zaman web sitemizi kullanarak tarayıcınız üzerinden teklif alabilirsiniz", Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
@@ -112,7 +74,7 @@ public class ilkSayfa extends AppCompatActivity{
             public void onClick(View v){
 
                 final Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:+905318170869"));
+                callIntent.setData(Uri.parse("tel:+903123958125"));
                 startActivity(callIntent);
             }
         });
@@ -121,7 +83,7 @@ public class ilkSayfa extends AppCompatActivity{
             @Override
             public boolean onLongClick(View v){
 
-                Toast.makeText(getApplicationContext(), "Bu şekilde ulaşamadığınız taktirde, web sitemizde bize ulaşabilmeniz için numaramız mevcuttur", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Bu şekilde ulaşamadığınız taktirde, web sitemizde bize ulaşabilmeniz için telefon ve faks numaralarımız mevcuttur", Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
@@ -157,7 +119,7 @@ public class ilkSayfa extends AppCompatActivity{
             @Override
             public boolean onLongClick(View v){
 
-                Toast.makeText(getApplicationContext(), "Proje ofisimiz ve Fabrikalarımız ile alakalı iletişim bilgileri ve adreslerine de web sitemizden ulaşabilirsiniz", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Proje ofisimiz ve Fabrikalarımız ile alakalı iletişim bilgileri ve adreslerine web sitemizden ulaşabilirsiniz", Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
