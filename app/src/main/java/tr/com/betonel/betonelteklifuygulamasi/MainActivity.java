@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity{
                     e.printStackTrace();
                 }finally{
 
-                    Intent intent = new Intent(MainActivity.this, test.class);
+                    Intent intent = new Intent(MainActivity.this, ilkSayfa.class);
                     startActivity(intent);
                 }
             }

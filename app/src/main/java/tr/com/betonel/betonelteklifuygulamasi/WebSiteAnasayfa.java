@@ -14,7 +14,10 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-public class WebSiteAnasayfa extends AppCompatActivity {
+import com.liuguangqiang.swipeback.SwipeBackActivity;
+import com.liuguangqiang.swipeback.SwipeBackLayout;
+
+public class WebSiteAnasayfa extends SwipeBackActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,7 @@ public class WebSiteAnasayfa extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_web_site_anasayfa);
+        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
 
         WebView wvWebSite = (WebView) findViewById(R.id.wbWebSite);
 

@@ -28,20 +28,6 @@
         <activity android:name=".Hakkinda" />
         <activity android:name=".Iletisim" />
         <activity android:name=".WebSiteAnasayfa" />
-        <activity android:name=".test" />
-        <activity
-            android:name=".navigationFlow"
-            android:label="@string/title_activity_navigation_flow"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TabbedAct"
-            android:label="@string/title_activity_tabbed"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".popUpSwipe"></activity>
     </application>
 
 </manifest>
