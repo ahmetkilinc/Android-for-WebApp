@@ -1,8 +1,13 @@
 package tr.com.betonel.betonelteklifuygulamasi;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -12,19 +17,32 @@ import android.widget.Toast;
 import com.liuguangqiang.swipeback.SwipeBackActivity;
 import com.liuguangqiang.swipeback.SwipeBackLayout;
 
-public class ilkSayfa extends SwipeBackActivity{
+public class ilkSayfa extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
 
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_ilk_sayfa);
-        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
+
+        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.custom_titlebar);
+
+        Button btnkapat = (Button) findViewById(R.id.buttonBetonel);
+
+        btnkapat.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+
+                finish();
+            }
+        });
 
         final ImageButton iBLogo = (ImageButton) findViewById(R.id.iBLogo);
         Button btnTeklifAl = (Button) findViewById(R.id.btnETeklifAl);
@@ -41,15 +59,15 @@ public class ilkSayfa extends SwipeBackActivity{
                 return false;
                 }
             });
-
+/*
         iBLogo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
 
-                //Intent intent = new Intent(ilkSayfa.this, WebSiteAnasayfa.class);
-                //startActivity(intent);
+                Intent intent = new Intent(ilkSayfa.this, ScreenSlidePagerActivity.class);
+                startActivity(intent);
             }
-        });
+        });*/
 
         btnTeklifAl.setOnClickListener(new View.OnClickListener(){
             @Override
