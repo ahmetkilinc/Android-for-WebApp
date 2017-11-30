@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ho1"
+        android:icon="@drawable/tpb"
+        android:title="tpb"/>
+    <item android:id="@+id/ho2"
+        android:icon="@drawable/iso"
+        android:title="iso" />
+</menu>

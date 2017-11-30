@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tr.com.betonel.betonelteklifuygulamasi.ilkSayfa">
+    tools:context="tr.com.betonel.betonelteklifuygulamasi.ilkSayfa"
+    xmlns:design="http://schemas.android.com/apk/res-auto">
 
     <ScrollView
         android:layout_width="0dp"
@@ -106,8 +107,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:typeface="monospace" />
-
         </LinearLayout>
     </ScrollView>
-
 </android.support.constraint.ConstraintLayout>
