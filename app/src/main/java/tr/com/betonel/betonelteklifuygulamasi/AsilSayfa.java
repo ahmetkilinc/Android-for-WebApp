@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.liuguangqiang.swipeback.SwipeBackActivity;
 import com.liuguangqiang.swipeback.SwipeBackLayout;
 
-public class AsilSayfa extends SwipeBackActivity {
+public class AsilSayfa extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,6 @@ public class AsilSayfa extends SwipeBackActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_asil_sayfa);
-        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
 
         WebView wv = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = wv.getSettings();
