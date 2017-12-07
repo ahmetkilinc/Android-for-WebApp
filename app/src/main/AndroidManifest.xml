@@ -24,11 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".AsilSayfa" />
-        <activity android:name=".ilkSayfa"
-            android:theme="@style/appTheme"/>
+        <activity android:name=".ilkSayfa" />
         <activity android:name=".Hakkinda" />
         <activity android:name=".Iletisim" />
         <activity android:name=".WebSiteAnasayfa" />
+        <activity android:name=".ScreenSlidePagerActivity"></activity>
     </application>
-
 </manifest>

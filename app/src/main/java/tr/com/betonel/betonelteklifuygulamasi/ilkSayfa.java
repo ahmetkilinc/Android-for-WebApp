@@ -24,33 +24,18 @@ public class ilkSayfa extends Activity{
 
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_ilk_sayfa);
 
-        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.custom_titlebar);
-
-        Button btnkapat = (Button) findViewById(R.id.buttonBetonel);
-
-        btnkapat.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v){
-
-                finish();
-            }
-        });
-
-        final ImageButton iBLogo = (ImageButton) findViewById(R.id.iBLogo);
+        //final ImageButton iBLogo = (ImageButton) findViewById(R.id.iBLogo);
         Button btnTeklifAl = (Button) findViewById(R.id.btnETeklifAl);
         Button btnAra = (Button) findViewById(R.id.btnAra);
         Button btnHakkinda = (Button) findViewById(R.id.btnHakkinda);
         Button btnIletisim = (Button) findViewById(R.id.btnIletisim);
         Button btnCikis = (Button) findViewById(R.id.btnCikis);
-
+/*
         iBLogo.setOnLongClickListener(new View.OnLongClickListener(){
             @Override
             public boolean onLongClick(View v){
@@ -59,7 +44,7 @@ public class ilkSayfa extends Activity{
                 return false;
                 }
             });
-/*
+
         iBLogo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
